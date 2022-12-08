@@ -79,7 +79,7 @@ int main(int argc, char *argv[])
     // make the parts
     Grid_game::Board board{map_filename};
     Grid_game::Token token{hp, pp, board};
-    Grid_game::Driver_scripted driver{board, token, cmd_filename};
+    Grid_game::Driver_scripted driver{board, token};
 
     Grid_game::Game_state state{board, token, driver, max_rounds};
 
